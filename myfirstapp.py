@@ -4,7 +4,7 @@ import streamlit as st
 import json, requests 
 
 # add your own APIkey
-APIkey = ''
+#APIkey = 'this should not be public'
 
 #location = 'london'
 st.header('Weather Forecast Service')
