@@ -1,10 +1,8 @@
 import streamlit as st
-st.header("hello world")
-title = st.text_input('Gimme a movie title', '<enter a movie title here in EN', max_chars=7)
 
 
-st.write('The current movie title is', title, 'blah', 'blah')
+st.write('The is written with', 'st.write', '()')
 
-st.text('The current movie title is' + title + 'blah'+ 'blah')
+st.text('The is written with' +  'st.text'+ '()')
 
 
