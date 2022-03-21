@@ -7,8 +7,8 @@ import json, requests
 APIkey = '51f0821c87571383249cff5f9a44fe1d'
 
 #location = 'london'
-st.header('Weather forecast')
-location = st.text_input('gimme a city name', 'rome')
+st.header('Weather Forecast Service')
+location = st.text_input('Gimme a city name:', 'Rome')
 
 # check API documentation to see what structure of URL is needed to access the data
 # http://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -31,4 +31,4 @@ weatherData = json.loads(response.text)
 
 #st.write(weatherData)
 
-st.write('the max temp in', location, 'is', (weatherData['main']['temp_max']))
+st.write('The max temp today in', location, 'is', (weatherData['main']['temp_max']), 'C')
