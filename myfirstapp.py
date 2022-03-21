@@ -7,6 +7,7 @@ import json, requests
 APIkey = '51f0821c87571383249cff5f9a44fe1d'
 
 #location = 'london'
+st.header('Weather forecast')
 location = st.text_input('gimme a city name', 'rome')
 
 # check API documentation to see what structure of URL is needed to access the data
@@ -29,5 +30,5 @@ weatherData = json.loads(response.text)
 # pprint(weatherData) 
 
 #st.write(weatherData)
-st.header(location+ ' weather forecast')
+
 st.write('the max temp in', location, 'is', (weatherData['main']['temp_max']))
