@@ -5,6 +5,7 @@ import json, requests
 
 # add your own APIkey
 #APIkey = 'this should not be public'
+APIkey=  st.secrets["APIkey"]
 
 #location = 'london'
 st.header('Weather Forecast Service')
