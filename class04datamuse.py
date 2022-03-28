@@ -26,35 +26,37 @@ if keyword != '':
 
  option = st.selectbox(
       'Select a constraint',
-      ('Synonyms', 'Antonyms', 'Sound like'))
+      ('','Synonyms', 'Antonyms', 'Sound like'))
 
  st.write('You selected:', option)
 
-
- if option == 'Synonyms':
+ if option !='':
+  
+  if option == 'Synonyms':
    url='https://api.datamuse.com/words?rel_syn=' + keyword + '&max=4'
- elif option =='Antonyms':
+  elif option =='Antonyms':
    url='https://api.datamuse.com/words?rel_ant=' + keyword + '&max=4'
- else: 
+  elif option =='Sound like':
    url= 'https://api.datamuse.com/words?sl=' + keyword + '&max=4'
+ 
 
 
 #Step3: Download the JSON data from the API.
- response = requests.get(url)   
+  response = requests.get(url)   
 #Uncomment to see the raw JSON text:
 #print(response.text)  
 
 
 #Step4: Load JSON data into a Python variable and use it in your program.
- dataFromDatamuse = json.loads(response.text)  
+  dataFromDatamuse = json.loads(response.text)  
 #pprint(dataFromDatamuse1)
 #pprint(dataFromDatamuse2)
 
- if dataFromDatamuse==[]:
-  st.write('sorry, i have nothing on this')
- else:
-  for eachentry in dataFromDatamuse:
-    st.write("-",eachentry['word']) 
+  if dataFromDatamuse==[]:
+   st.write('sorry, i have nothing on this')
+  else:
+   for eachentry in dataFromDatamuse:
+     st.write("-",eachentry['word']) 
   
   
 #Uncomment to see the raw JSON text loaded in a Python Variable:
