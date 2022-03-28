@@ -47,7 +47,7 @@ dataFromDatamuse = json.loads(response.text)
 #pprint(dataFromDatamuse2)
 
 
-for eachentry in dataFromDatamuse2:
+for eachentry in dataFromDatamuse:
   st.write("-",eachentry['word']) 
   
   
