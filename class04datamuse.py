@@ -20,6 +20,8 @@ from pprint import pprint
 # make the above URL more generic, so that it is easy to replace the keyword
 keyword=st.text_input('plz give me a keyword : ','peace')
 
+
+st.header('Datamuse Streamlit App')
 option = st.selectbox(
      'Select a constraint',
      ('Synonyms', 'Antonyms', 'Sound like'))
