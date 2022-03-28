@@ -12,6 +12,7 @@ from pprint import pprint
 #this library handles the query with the API so we do not need the following steps:
 #Step1: Check the API documentation to see if the APIkey is needed. 
 #No APIkey needed.
+st.header('Datamuse Streamlit App')
 
 
 #Step2: Check API documentation to see what structure of URL is needed to access the data?
@@ -21,7 +22,6 @@ from pprint import pprint
 keyword=st.text_input('plz give me a keyword : ','peace')
 
 
-st.header('Datamuse Streamlit App')
 option = st.selectbox(
      'Select a constraint',
      ('Synonyms', 'Antonyms', 'Sound like'))
