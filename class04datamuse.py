@@ -50,9 +50,11 @@ if keyword != '':
 #pprint(dataFromDatamuse1)
 #pprint(dataFromDatamuse2)
 
-
- for eachentry in dataFromDatamuse:
-   st.write("-",eachentry['word']) 
+ if dataFromDatamuse==[]:
+  st.write('sorry, i have nothing on this')
+ else:
+  for eachentry in dataFromDatamuse:
+    st.write("-",eachentry['word']) 
   
   
 #Uncomment to see the raw JSON text loaded in a Python Variable:
