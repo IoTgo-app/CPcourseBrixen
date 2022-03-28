@@ -19,38 +19,40 @@ st.header('Datamuse Streamlit App')
 #For finding rhyming words for the keyword 'funny', the URL looks like this:
 #'https://api.datamuse.com/words?rel_rhy=funny'
 # make the above URL more generic, so that it is easy to replace the keyword
-keyword=st.text_input('plz give me a keyword : ','peace')
+keyword=st.text_input('plz give me a keyword : ','')
+
+if keyword != '':
+ 
+
+ option = st.selectbox(
+      'Select a constraint',
+      ('Synonyms', 'Antonyms', 'Sound like'))
+
+ st.write('You selected:', option)
 
 
-option = st.selectbox(
-     'Select a constraint',
-     ('Synonyms', 'Antonyms', 'Sound like'))
-
-st.write('You selected:', option)
-
-
-if option == 'Synonyms':
-  url='https://api.datamuse.com/words?rel_syn=' + keyword + '&max=4'
-elif option =='Antonyms':
-  url='https://api.datamuse.com/words?rel_ant=' + keyword + '&max=4'
-else: 
-  url= 'https://api.datamuse.com/words?sl=' + keyword + '&max=4'
+ if option == 'Synonyms':
+   url='https://api.datamuse.com/words?rel_syn=' + keyword + '&max=4'
+ elif option =='Antonyms':
+   url='https://api.datamuse.com/words?rel_ant=' + keyword + '&max=4'
+ else: 
+   url= 'https://api.datamuse.com/words?sl=' + keyword + '&max=4'
 
 
 #Step3: Download the JSON data from the API.
-response = requests.get(url)   
+ response = requests.get(url)   
 #Uncomment to see the raw JSON text:
 #print(response.text)  
 
 
 #Step4: Load JSON data into a Python variable and use it in your program.
-dataFromDatamuse = json.loads(response.text)  
+ dataFromDatamuse = json.loads(response.text)  
 #pprint(dataFromDatamuse1)
 #pprint(dataFromDatamuse2)
 
 
-for eachentry in dataFromDatamuse:
-  st.write("-",eachentry['word']) 
+ for eachentry in dataFromDatamuse:
+   st.write("-",eachentry['word']) 
   
   
 #Uncomment to see the raw JSON text loaded in a Python Variable:
