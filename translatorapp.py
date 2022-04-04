@@ -18,8 +18,7 @@ number = np.random.randint(1,20)
 
 g = 0
 
-while True :
-    if g
+while True : 
     if x> number:
         st.write("Wrong, Your guess is greater than the number")
     if x< number:
