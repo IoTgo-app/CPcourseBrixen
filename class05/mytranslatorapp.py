@@ -10,6 +10,7 @@ import streamlit as st
 translator = Translator()
 word= st.text_input('Gimme a word to translate: ','' )
 if word != '':
+  lang= st.text_input('Gimme a target langauge: ','' )
   #destlang=input('Tell me a two letter code for the destination language like es or en: ')
-  abc = translator.translate(word, dest='it') 
+  abc = translator.translate(word, dest=lang) 
   st.write('the translation is', abc.text)
