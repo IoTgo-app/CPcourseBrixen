@@ -8,7 +8,7 @@ import streamlit as st
 #[NotNeeded] Step3: Download the JSON data from the API.
 #[NotNeeded] Step4: Load JSON data into a Python variable and use it in your program.
 translator = Translator()
-word= st.text_input('Gimme a word to translate: ')
+word= st.text_input('Gimme a word to translate: ','word' )
 #destlang=input('Tell me a two letter code for the destination language like es or en: ')
 abc = translator.translate(word, dest='it') 
 st.write('the translation is', abc.text)
