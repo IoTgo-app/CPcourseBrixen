@@ -6,7 +6,7 @@ translator = Translator()
 
 while True:
   keyword= st.text_input('hi i am your translation chatbot. what you want to translate? ','', key=1)
-  if keyword !=''
+  if keyword !='':
     keyword_it = translator.translate(keyword, src='en', dest='it')
     if keyword == 'nothing':
       print('ok. bye !')
