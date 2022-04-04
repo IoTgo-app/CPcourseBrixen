@@ -10,6 +10,5 @@ if keyword !='':
   keyword_it = translator.translate(keyword, src='en', dest='it')
   if keyword == 'nothing':
     print('ok. bye !')
-    
-st.write(keyword, 'is called', keyword_it.text, 'in italian')
+  st.write(keyword, 'is called', keyword_it.text, 'in italian')
  
