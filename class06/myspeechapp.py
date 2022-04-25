@@ -2,11 +2,6 @@
 from googletrans import Translator
 from gtts import gTTS 
 import streamlit as st
-import os
-try:
-    os.mkdir("temp")
-except:
-    pass
   
 
 st.write("hello")
@@ -19,4 +14,4 @@ audio_bytes = audio_file.read()
 st.markdown(f"## Your audio:")
 st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
-st.download_button(label="Download audio file", data=audio_bytes.read(), file_name='youraudio.mp3',mime='audio/mp3')
+st.download_button(label="Download audio file", data=audio_file, file_name='youraudio.mp3',mime='audio/mp3')
