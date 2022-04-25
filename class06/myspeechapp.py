@@ -2,6 +2,13 @@
 from googletrans import Translator
 from gtts import gTTS 
 import streamlit as st
+import os
+try:
+    os.mkdir("temp")
+except:
+    pass
+  
+
 st.write("hello")
 
 tts1=gTTS(text='hello world')
