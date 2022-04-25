@@ -18,3 +18,5 @@ audio_file = open(f"audio.mp3", "rb")
 audio_bytes = audio_file.read()
 st.markdown(f"## Your audio:")
 st.audio(audio_bytes, format="audio/mp3", start_time=0)
+
+st.download_button(label="Download audio file", data=audio_bytes.read(), file_name='youraudio.mp3',mime='audio/mp3')
