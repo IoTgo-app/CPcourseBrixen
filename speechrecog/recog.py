@@ -17,9 +17,9 @@ if uploaded_file is not None:
 #AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
 #st.text(AUDIO_FILEdata.headers.get('content-type'))
 
-with sr.AudioFile(AUDIO_FILE) as source:
-  audio = r.record(source)  # read the entire audio file   
-recognised_text= r.recognize_google(audio)
+  with sr.AudioFile(AUDIO_FILE) as source:
+    audio = r.record(source)  # read the entire audio file   
+  recognised_text= r.recognize_google(audio)
 
-st.text('the text recognized from the audio seems to be: ')
-st.text( recognised_text)
+  st.text('the text recognized from the audio seems to be: ')
+  st.text( recognised_text)
