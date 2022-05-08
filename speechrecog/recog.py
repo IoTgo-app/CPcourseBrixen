@@ -17,10 +17,11 @@ AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
 
 st.audio(AUDIO_FILEurl, format="audio/wav")
 
+with open(AUDIO_FILEurl, 'rb') as f:
+    with sr.AudioFile(AUDIO_FILEdata) as source:
+        audio = r.record(source)  # read the entire audio file
 
-with sr.AudioFile(AUDIO_FILEdata) as source:
-    audio = r.record(source)  # read the entire audio file
-
+    
 recognised_text= r.recognize_google(audio)
 
 st.text('the text recognized from the audio seems to be: ')
