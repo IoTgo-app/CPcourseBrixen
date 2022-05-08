@@ -16,11 +16,11 @@ st.audio(AUDIO_FILEurl, format="audio/wav")
 
 
 AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
-with sr.AudioFile(AUDIO_FILEdata) as source:
-    audio = r.record(source)  # read the entire audio file
+st.text(AUDIO_FILEdata.headers.get('content-type'))
 
-    
-recognised_text= r.recognize_google(audio)
+#with sr.AudioFile(AUDIO_FILEdata) as source:
+ #   audio = r.record(source)  # read the entire audio file   
+#recognised_text= r.recognize_google(audio)
 
 st.text('the text recognized from the audio seems to be: ')
 st.text( recognised_text)
