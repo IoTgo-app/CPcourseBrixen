@@ -15,7 +15,7 @@ AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
 #st.file_uploader("upload your audio file", type="audio/wav")
 
 
-st.audio(AUDIO_FILEdata, format="audio/wav")
+st.audio(AUDIO_FILEurl, format="audio/wav")
 
 
 with sr.AudioFile(AUDIO_FILEdata) as source:
