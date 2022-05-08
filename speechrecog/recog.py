@@ -18,7 +18,7 @@ AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
 st.audio(AUDIO_FILEurl, format="audio/wav")
 
 with open(AUDIO_FILEurl, 'rb') as f:
-    with sr.AudioFile(AUDIO_FILEdata) as source:
+    with sr.AudioFile(f) as source:
         audio = r.record(source)  # read the entire audio file
 
     
