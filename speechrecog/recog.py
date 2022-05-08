@@ -1,7 +1,7 @@
 
 import speech_recognition as sr
 import streamlit as st
-import urllib2  # the lib that handles the url stuff
+import requests   
 
 r = sr.Recognizer()
 
@@ -10,7 +10,7 @@ r = sr.Recognizer()
 #https://github.com/rizMehdi/CPcourseBrixen/blob/main/speechrecog/sample_audio_long.wav
 
 AUDIO_FILEurl="https://raw.githubusercontent.com/rizMehdi/CPcourseBrixen/main/speechrecog/sample_audio_long.wav"
-AUDIO_FILEdata = urllib2.urlopen(AUDIO_FILEurl)
+AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
 
 #st.file_uploader("upload your audio file", type="audio/wav")
 
