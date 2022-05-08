@@ -23,4 +23,4 @@ st.text(AUDIO_FILEdata.headers.get('content-type'))
 #recognised_text= r.recognize_google(audio)
 
 st.text('the text recognized from the audio seems to be: ')
-st.text( recognised_text)
+#st.text( recognised_text)
