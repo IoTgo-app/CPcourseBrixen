@@ -10,7 +10,7 @@ r = sr.Recognizer()
 #https://github.com/rizMehdi/CPcourseBrixen/blob/main/speechrecog/sample_audio_long.wav
 #AUDIO_FILEurl="https://raw.githubusercontent.com/rizMehdi/CPcourseBrixen/main/speechrecog/sample_audio_long.wav"
 
-AUDIO_FILE=st.file_uploader("upload your audio file", type="audio/wav")
+AUDIO_FILE=st.file_uploader("upload your audio file")
 if AUDIO_FILE is not None:
   st.audio(AUDIO_FILE, format="audio/wav")
 
