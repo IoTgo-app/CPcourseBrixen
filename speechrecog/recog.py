@@ -10,16 +10,14 @@ r = sr.Recognizer()
 #https://github.com/rizMehdi/CPcourseBrixen/blob/main/speechrecog/sample_audio_long.wav
 
 AUDIO_FILEurl="https://raw.githubusercontent.com/rizMehdi/CPcourseBrixen/main/speechrecog/sample_audio_long.wav"
-AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
+st.audio(AUDIO_FILEurl, format="audio/wav")
 
 #st.file_uploader("upload your audio file", type="audio/wav")
 
 
-st.audio(AUDIO_FILEurl, format="audio/wav")
-
-with open(AUDIO_FILEdata, 'rb') as f:
-    with sr.AudioFile(f) as source:
-        audio = r.record(source)  # read the entire audio file
+AUDIO_FILEdata = requests.get(AUDIO_FILEurl)
+with sr.AudioFile(AUDIO_FILEdata) as source:
+    audio = r.record(source)  # read the entire audio file
 
     
 recognised_text= r.recognize_google(audio)
