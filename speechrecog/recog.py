@@ -3,6 +3,10 @@ import speech_recognition as sr
 import streamlit as st
 import requests   
 
+
+st.write(st.secrets["my_token"])
+
+
 r = sr.Recognizer()
 
 #AUDIO_FILE = "sample_audio_short.wav"   #mp3 files are not supported
