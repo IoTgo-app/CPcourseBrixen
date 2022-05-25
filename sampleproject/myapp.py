@@ -10,6 +10,7 @@ st.header("Audio-Wikipedia")
 st.write("This app converts an wikipedia article to audio file so that you can can listen to it on the go.")
 st.write("A project by BlahBlah Blah, for the course of Computer Programing, MS Applied Linguistics, at unibz, Brixen, Italy")
 st.write("")
+st.markdown("""---""")
 
 st.text_input("Please paste here the URL of the wikipedia page you want to convert to audio")
 st.selectbox("Please select the origin langauge of the wikipedia page",( "English", "French", "Arabic", "Italian"))
