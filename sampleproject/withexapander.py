@@ -11,7 +11,7 @@ st.header("Audio-Wikipedia")
 st.write("This app converts an wikipedia article to audio file so that you can can listen to it on the go.")
 st.write("A project by BlahBlah Blah, for the course of Computer Programing, MS Applied Linguistics, at unibz, Brixen, Italy")
 
-with st.expander("How to use > ")
+with st.expander("How to use > "):
      st.write("""
      - Just paste the URL of the wikipedia article, 
      - select origin and target langauge 
@@ -29,12 +29,11 @@ st.audio( "https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xua
 
 with st.expander("See credits"):
      st.write("""
-- For Wikipedia logo: https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg, available under the Creative Commons Attribution-ShareAlike License 3.0; a
-""")
-st.write("""- For the sample audio file: Performer: Muriel Nguyen Xuan and Stéphane MagnenatComposer: Frédéric Chopin, License: Creative Commons Attribution-Share Alike 4.0 International, 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license. https://creativecommons.org/licenses/by-sa/4.0/, URL: https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg
-""")
-st.write("""- For the tutorial: https://docs.streamlit.io/library/api-reference/media/st.audio 
-""")
+          - For Wikipedia logo: https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg, available under the Creative Commons Attribution-ShareAlike License 3.0; a
+        """)
+     st.write("""- For the sample audio file: Performer: Muriel Nguyen Xuan and Stéphane MagnenatComposer: Frédéric Chopin, License: Creative Commons Attribution-Share Alike 4.0 International, 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license. https://creativecommons.org/licenses/by-sa/4.0/, URL: https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg
+     """)
+     st.write("""- For the tutorial: https://docs.streamlit.io/library/api-reference/media/st.audio 
+     """)
 
-st.write("Made by Anony Amous")
-st.write("Computer Programing, MS Applied Linguistics, at unibz, Brixen, Italy")
+
