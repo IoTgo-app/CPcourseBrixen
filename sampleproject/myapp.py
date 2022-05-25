@@ -1,7 +1,6 @@
 import streamlit as st
 
 from PIL import Image
-wikiimage = 'https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png'
 wikiimage ='https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1024px-Wikipedia-logo-v2.svg.png' 
 # wikiimage = Image.open('https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png')
 
@@ -13,14 +12,11 @@ st.write("A project by BlahBlah Blah, for the course of Computer Programing, MS 
 st.write("")
 
 st.text_input("Please paste here the URL of the wikipedia page you want to convert to audio")
-st.selectbox("Please select the origin langauge of the wikipedia page",( "English", "French", "Arabic"))
+st.selectbox("Please select the origin langauge of the wikipedia page",( "English", "French", "Arabic", "Italian"))
 
-st.selectbox("Please select the target langauge in which you want to hear the article",( "English", "French", "Arabic"))
+st.selectbox("Please select the target langauge in which you want to hear the article",( "Italian", "Arabic", "English", "French"))
 
-file_bytes = read_file_from_url(
-    "https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg"
-)
-st.audio(file_bytes, format="audio/ogg")
+st.audio( "https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg", format="audio/ogg")
 
 st.markdown("""---""")
 
