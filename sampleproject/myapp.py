@@ -22,7 +22,9 @@ st.markdown("""---""")
 
 st.write("Credits:")
 st.write("""
-For Wikipedia logo: https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg, available under the Creative Commons Attribution-ShareAlike License 3.0; a
-For the sample audio file: Performer: Muriel Nguyen Xuan and Stéphane MagnenatComposer: Frédéric Chopin, License: Creative Commons Attribution-Share Alike 4.0 International, 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license. https://creativecommons.org/licenses/by-sa/4.0/, URL: https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg
-For the tutorial: https://docs.streamlit.io/library/api-reference/media/st.audio 
+- For Wikipedia logo: https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg, available under the Creative Commons Attribution-ShareAlike License 3.0; a
+""")
+st.write("""- For the sample audio file: Performer: Muriel Nguyen Xuan and Stéphane MagnenatComposer: Frédéric Chopin, License: Creative Commons Attribution-Share Alike 4.0 International, 3.0 Unported, 2.5 Generic, 2.0 Generic and 1.0 Generic license. https://creativecommons.org/licenses/by-sa/4.0/, URL: https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg
+""")
+st.write("""- For the tutorial: https://docs.streamlit.io/library/api-reference/media/st.audio 
 """)
