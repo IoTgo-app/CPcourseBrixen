@@ -17,6 +17,7 @@ st.selectbox("Please select the origin langauge of the wikipedia page",( "Englis
 
 st.selectbox("Please select the target langauge in which you want to hear the article",( "Italian", "Arabic", "English", "French"))
 
+st.write("Here is the audio file, press the play button to listen.")
 st.audio( "https://upload.wikimedia.org/wikipedia/commons/c/c4/Muriel-Nguyen-Xuan-Chopin-valse-opus64-1.ogg", format="audio/ogg")
 
 st.markdown("""---""")
