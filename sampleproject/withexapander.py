@@ -11,7 +11,7 @@ st.header("Audio-Wikipedia")
 st.write("This app converts an wikipedia article to audio file so that you can can listen to it on the go.")
 st.write("A project by BlahBlah Blah, for the course of Computer Programing, MS Applied Linguistics, at unibz, Brixen, Italy")
 
-with st.expander("How to use):
+with st.expander("How to use > ")
      st.write("""
      - Just paste the URL of the wikipedia article, 
      - select origin and target langauge 
