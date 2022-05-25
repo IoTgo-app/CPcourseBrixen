@@ -1,7 +1,9 @@
 import streamlit as st
 
 from PIL import Image
-wikiimage = Image.open('https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png')
+wikiimage = 'https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png'
+# wikiimage = Image.open('https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png')
+
 st.image(wikiimage)
 
 st.header("Audio-Wikipedia")
