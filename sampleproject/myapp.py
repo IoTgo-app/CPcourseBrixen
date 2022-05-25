@@ -2,9 +2,10 @@ import streamlit as st
 
 from PIL import Image
 wikiimage = 'https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png'
+
 # wikiimage = Image.open('https://pngimg.com/uploads/wikipedia/wikipedia_PNG31.png')
 
-st.image(wikiimage)
+st.image(wikiimage, width=100)
 
 st.header("Audio-Wikipedia")
 st.write("This app converts an wikipedia article to audio file so that you can can listen to it on the go.")
