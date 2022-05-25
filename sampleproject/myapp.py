@@ -1,8 +1,8 @@
 import streamlit as st
 
 from PIL import Image
-image = Image.open('https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg')
-st.image(image)
+# image = Image.open('https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg')
+st.image('https://en.wikipedia.org/wiki/Wikipedia_logo#/media/File:Wikipedia-logo-v2.svg')
 
 st.header("Audio-Wikipedia")
 st.write("This app converts an wikipedia article to audio file so that you can can listen to it on the go.")
