@@ -3,7 +3,6 @@ import json,requests
 from pprint import pprint
 from gtts import gTTS
 from googletrans import Translator
-import IPython.display as ipd
 from PIL import Image
 from lxml import html
 import io
